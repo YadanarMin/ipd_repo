@@ -1,0 +1,108 @@
+#data ul{
+margin-right:2%;
+}
+#data li{
+   list-style:none;
+   padding: 5px;
+   margin-bottom:10px;
+   background-color: #bfbfbf;/*#1a1a1a*/
+   color: #0000b3;
+   width:97%;
+}
+.icon{
+ float:right;
+}
+
+#tblOverall tbody{
+ overflow-y:auto;
+}
+
+
+
+#data th{
+padding :0px;
+background-color: #f2f2f2;
+color:#000000;
+border:none;
+font-size:12px;
+}
+.col1,.col2,.col3{
+min-width:100px;
+}
+.col1{
+width:150px;
+}
+.col2{
+width:200px;
+}
+.col3{
+width:250px;
+}
+.col4{
+    width:350px;
+}
+
+tbody tr:nth-child(even) {/*background: #e6e6e6*/}
+tbody tr:nth-child(odd) {/*background: #fff*/}
+tbody tr.active {
+    background: #99bbff;
+}
+#tblOverall tr:hover{
+    background: #e6e6e6;
+    cursor:pointer;
+}
+
+#data table {
+  border-collapse: collapse;
+  max-width: 890px;
+  overflow-x: scroll;
+  display: block;
+}
+
+#data thead {
+  background-color: #EFEFEF;
+}
+
+#data thead,
+#data tbody {
+  display: block;
+  position: relative;
+}
+
+#data tbody {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 140px;
+}
+
+#data td,
+#data th {
+  min-width: 100px;
+  height: 25px;
+  border: dashed 1px lightblue;
+  /*overflow: hidden;*/
+  /*text-overflow: ellipsis;*/
+  /*max-width: 100px;*/
+}
+
+#tblOverall tbody{
+    overflow-y: scroll;
+}
+#data tr{
+    display:block;
+}
+#data table::-webkit-scrollbar {
+height:7px;
+}
+#data table::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+/* Handle */
+#data table::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+#data table::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}

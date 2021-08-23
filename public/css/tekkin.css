@@ -1,0 +1,238 @@
+.main-content{
+    background-color: #edf0f2;
+}
+#mainarea{
+    background-color: #edf0f2;
+    margin: 0px -29px 0 -29px;
+}
+#maincontent{
+    padding: 10px 29px 0 29px;
+}
+#chartDiv{
+    height:60vh;
+}
+#formulaPopupSize{
+    width:1050px;
+    height:93vh;
+    background:#4C9CA0;
+}
+#tekkinTotal{
+    /*text-align: right;*/
+    /*margin: 0 5px 0 0;*/
+}
+#tekkinData{
+    min-height:75.5vh;
+    margin:0 0 -1vh 0;
+    display: flex;
+    border-top: 1px solid #dae1e6;
+    /*border:1px solid black;*/
+    background-color: #edf0f2;
+}
+#levelDiv{
+    margin: 0 5vh 2vh 2vh;
+}
+.main{
+    width :calc(100vh + 550px);
+    min-height: 500px;
+}
+.sidebar{
+    width:550px;
+    margin:0vh 0 -0.999vh 0;
+    border-right: 1px solid #dae1e6;
+    /*border:1px solid red;*/
+    /*background-color: white;*/
+}
+.matrix-table{
+    margin:1vh 3vh 1vh 1vh;
+    /*border:1px solid green;*/
+}
+.mt-header{
+    height: 10vh;
+    /*background-color: white;*/
+}
+.mt-body{
+    height: 73.77vh;
+    /*background-color: white;*/
+}
+.levelElement{
+    display: flex;
+}
+.levelElement:hover{
+    background : lightgray;
+}
+.levelElement.active{
+    color : dodgerblue;
+}
+.levelList
+,.levelList li{
+	padding:0px;
+	margin:0px;
+}
+ 
+.levelList li{
+	list-style-type:none !important;
+	list-style-image:none !important;
+	margin: 5px 0px 5px 0px !important;
+}
+ 
+.list1 li{
+	position:relative;
+	padding-left:20px;
+}
+ 
+.list1 li:before{
+	content:''; 
+	display:block; 
+	position:absolute; 
+	box-shadow: 0 0 2px 2px rgba(255,255,255,0.2) inset;
+	top:3px; 
+	left:2px; 
+	height:0; 
+	width:0; 
+	border-top: 6px solid transparent;
+	border-right: 7px solid transparent;
+	border-bottom: 6px solid transparent;
+	border-left: 9px solid #aaa;
+}
+.acd-check{
+    display: none;
+}
+.acd-label{
+    background: #0068b7;
+    color: #fff;
+    display: block;
+    margin-bottom: 1px;
+    padding: 10px;
+    position: relative;
+    width: 822px;
+}
+.acd-label:after{
+    background: #00479d;
+    box-sizing: border-box;
+    content: '\f067';
+    display: block;
+    font-family: "Font Awesome 5 Free";
+    height: 40px;
+    padding: 10px 20px;
+    position: absolute;
+    right: 0;
+    top: 0px;
+}
+
+.acd-content{
+    /*border: 1px solid #333;*/
+    display: block;
+    height: 0;
+    opacity: 0;
+    padding: 0 10px;
+    transition: .5s;
+    visibility: hidden;
+}
+.acd-check:checked + .acd-label:after{
+    content: '\f068';
+}
+.acd-check:checked + .acd-label + .acd-content{
+    height: 520px;
+    opacity: 1;
+    padding: 10px;
+    visibility: visible;
+}
+.acd-label p{
+	margin:0 0 0 0;
+}
+.tblTekkinData {
+    width: 80%;
+    margin-bottom:9vh;
+}
+.tblTekkinData td{
+    padding-left:20px;
+}
+
+.tblField{
+    width: 804px;
+    height: 500px;
+    /*overflow: auto;*/
+}
+.tblField table{
+    width: 100%;
+    border-collapse: collapse;
+    /*border: solid #CCC;*/
+    /*border-width: 1px;*/
+}
+.tblField table thead{
+    display: block;
+}
+.tblField table tbody{
+    display: block;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 460px;
+}
+.tblField tbody{
+    display: block;
+}
+.trNumber{
+    width: 50px;
+}
+.trElementID{
+    width: 100px;
+}
+.trWeight{
+    width: 130px;
+}
+.trTotal{
+    width: 100px;
+}
+.trPhase{
+    width: 146px;
+}
+.tblField table tr th,
+.tblField table tr td{
+    padding: 0.5em;
+    text-align: center;
+    vertical-align: middle;
+    border: solid #CCC;
+    border-width: 1px;
+}
+.tblField table tr th{
+    background: silver;
+    color: black;
+}
+@media screen and (max-width:768px){
+    .tblField{
+    width: 100%;
+    }
+    .tblField table tbody,
+    .tblField table tr thead,
+    .tblField table tr,
+    .tblField table tr th,
+    .tblField table tr td{
+    display: block;
+}
+.tblField table{
+    width: 100%;
+    border-width: 0 1px 1px 0;
+}
+.tblField table tr th,
+.tblField table tr td{
+    padding:0.5em;
+    border-width: 1px 0 0 1px;
+}
+.tblField table thead{
+    float: left;
+    width: 30%;
+}
+.tblField table thead tr{
+    width: 100%;
+}
+.tblField table tbody{
+    float: left;
+    width: 70%;
+}
+.tblField table tbody tr{
+    width: 33.3%;
+}
+.tblField table tbody tr{
+    float: left;
+}
+}

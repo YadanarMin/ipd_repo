@@ -1,0 +1,8 @@
+.disabledBtn{
+    background-color: #cccccc;
+}
+
+.selected{
+    color : blue;
+    text-decoration: underline;
+}

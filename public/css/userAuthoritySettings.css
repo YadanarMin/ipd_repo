@@ -1,0 +1,241 @@
+.main-content{
+  margin:0 0 0 0;
+  min-height: 125.77vh;
+  max-height: 150vh;
+  /*border: solid 1px red;*/
+}
+#contentHeader{
+  margin: 2vh 30vh 0 63vh;
+  height: 3vh;
+}
+#contentBody{
+  margin:0 30vh 0 63vh;
+}
+@media screen and (max-width: 1680px) {
+  #contentHeader{
+    margin: 2vh 30vh 0 50vh;
+    height: 3vh;
+  }
+  #contentBody{
+    margin:0 30vh 0 50vh;
+  }
+}
+@media screen and (max-width: 1580px) {
+  #contentHeader{
+    margin: 2vh 30vh 0 40vh;
+    height: 3vh;
+  }
+  #contentBody{
+    margin:0 30vh 0 40vh;
+  }
+}
+@media screen and (max-width: 1480px) {
+  #contentHeader{
+    margin: 2vh 30vh 0 37vh;
+    height: 3vh;
+  }
+  #contentBody{
+    margin:0 30vh 0 37vh;
+  }
+}
+@media screen and (max-width: 1430px) {
+  #contentHeader{
+    margin: 2vh 20vh 0 32vh;
+    height: 3vh;
+  }
+  #contentBody{
+    margin:0 20vh 0 32vh;
+  }
+}
+@media screen and (max-width: 1280px) {
+  #contentHeader{
+    margin: 2vh 10vh 0 10vh;
+    height: 3vh;
+  }
+  #contentBody{
+    margin:0 10vh 0 10vh;
+  }
+}
+@media screen and (max-width: 1000px) {
+  #contentHeader{
+    margin: 2vh 3vh 0 3vh;
+    height: 3vh;
+  }
+  #contentBody{
+    margin:0 3vh 0 3vh;
+  }
+  /*.selectWrap{*/
+  /*  width: 227px;*/
+  /*  position: relative;*/
+  /*  display: inline-block;*/
+  /*}*/
+  /*#btnUpdateAuthority{*/
+  /*  margin:0 0 0 15px;*/
+  /*  border:solid 1.5px lightgray;*/
+  /*}*/
+  /*#theadthAuthorityType{*/
+  /*  width:150px;*/
+  /*}*/
+  /*#theadthService{*/
+  /*  width:250px;*/
+  /*}*/
+  /*#theadthAuthority{*/
+  /*  width:100px;*/
+  /*  text-align:center;*/
+  /*}*/
+}
+#theadthAuthorityType{
+  width:200px;
+  padding:10px 0 10px 10px;
+}
+#theadthService{
+  width:294px;
+  padding-left:10px;
+}
+#theadthAuthority{
+  width:86px;
+  text-align:center;
+}
+#theadthUpdate{
+  width:86px;
+  text-align:center;
+}
+#theadthDelete{
+  width:86px;
+  text-align:center;
+}
+#tblAuthorityList{
+  width:100%;
+}
+#tblAuthorityList th{
+  background-color:#204b80;
+  color:white;
+  border:1px solid;
+}
+#tblAuthorityList td{
+  padding: 2.5px 0 5px 0;
+}
+#tblAuthorityList td:first-child{
+  /*text-align:left;*/
+  padding-left:10px;
+}
+
+#tblAuthorityList tr:nth-child(even) {background: #f2f2f2}
+#tblAuthorityList tr:nth-child(odd) {background: #d9d9d9}
+
+#tblAuthorityList thead{
+  display: block;
+}
+#tblAuthorityList tbody{
+  display: block;
+  /*min-height:589px;*/
+  /*max-height: 717px;*/
+  min-height:650px;
+  max-height: 1500px;
+  width: 853px;
+  /*overflow-x: hidden;*/
+  /*overflow-y: scroll;*/
+}
+.thManager{
+  width:200px;
+}
+.thService{
+  width:380px;
+}
+.thChkbox{
+  width:172px;
+}
+
+.theadBoxAuthority,.tdBoxAuthority{
+  width:100px;
+  text-align:center !important;
+}
+
+.tdManager{
+  width:200px;
+}
+.tdService{
+  width:294px;
+}
+.tdChkbox{
+  width:86px;
+  text-align:center;
+}
+.tdUpdate{
+  width:86px;
+  text-align:center;
+}
+.tdDelete{
+  width:86px;
+  text-align:center;
+}
+.form-control{
+  width:77%;
+}
+#btnUpdateAuthority{
+  margin:0 0 0 54px;
+  border:solid 1.5px lightgray;
+}
+.trAuthorityType{
+}
+.trServiceType{
+  display: none;
+}
+.selectWrap{
+  width: 580px;
+  position: relative;
+  display: inline-block;
+}
+.selectWrap::after {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border: 0px;
+  border-bottom: solid 2px #b4b3b3;
+  border-right: solid 2px #b4b3b3;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  margin-top: -4px;
+}
+.select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 40px;
+  background: transparent;
+  position: relative;
+  z-index: 1;
+  padding: 0 40px 0 10px;
+  border: 1px solid #b4b3b3;
+  border-radius: 2px;
+}
+select::-ms-expand {
+  display: none;
+}
+#authorityType{
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: darkgray;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+}
+.auPopup {
+    margin: 300px auto;
+    padding: 20px;
+    /*background: url("../../public/image/lavender.jpg") no-repeat;*/
+    background-color: #F5F5F5;
+    opacity: 0.9;
+    border-radius: 5px;
+    width: 30%;
+    height:30%;
+    position: relative;
+    transition: all 0s ease-in-out;
+}

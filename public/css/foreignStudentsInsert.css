@@ -1,0 +1,34 @@
+#studentInfo{
+    width : 65%;
+    margin-left: 20px;
+    border : 1px solid rgb(224, 224, 209);
+    padding: 30px;
+    
+}
+.disabledBtn{
+    background-color: #cccccc;
+}
+.selected{
+    color : blue;
+    text-decoration: underline;
+}
+.chainLink{
+        margin-top: 30px;
+        position: absolute;
+        margin-left: -20px;
+}
+    #sideBar{
+        width : 30%;
+        padding : 20px;
+        border : 1px solid rgb(224, 224, 209);
+    }
+    
+    .studentViewer{
+         width : 100%;
+         margin: 2% 3% 3% 3%;
+         display : inline-flex;
+    }
+    .customBtn{
+        margin : 1% 3% 0% 3%;
+        display : center;
+    }

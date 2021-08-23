@@ -1,0 +1,95 @@
+#page-content{
+    /*border:0.1px solid white;*/
+    position: relative;
+    width: 100%;
+    min-height:90vh;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+}
+.main-content{  
+    /*min-height:89.98vh;*/
+    /*width:93%;*/
+    /*margin:10vh 0% 0% 6%;*/
+    /*height: auto;*/
+    min-height:83.98vh;
+    margin:0vh 3vh 0 3vh;
+    width :auto;
+    height:auto;
+}
+.outerBorder{
+    position:static;
+    border:2px solid #707070;    /* #002b80 */
+    min-height:83vh;
+    height:auto !important;
+    margin-bottom:2.5vh;
+}
+.titleDesign{
+    color:plum;
+    text-align:center;
+    text-shadow:5px 5px 4px gray;
+    font-weight:bold;
+    font-size:2em;
+}
+.btnDesign{
+    background:gray;
+    color:white;
+    width:95px;
+    margin:10% 0 0 2%;
+    height:40px;
+}
+.pageTitle{
+    text-align:left;
+    text-shadow:1px 1px 1px gray;
+}
+.popupOverlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+.popup {
+    margin: 70px auto;
+    padding: 20px;
+    /*background: url("../../public/image/lavender.jpg") no-repeat;*/
+    background-color: #F5F5F5;
+    opacity: 0.9;
+    border-radius: 5px;
+    width: 40%;
+    height:60%;
+    position: relative;
+    transition: all 0s ease-in-out;
+}
+
+#tblSetting th,#tblUser th,#tblVersionData th,#tblTekkinData th,#tbProject th,#tbUser th,#tbCheckBox th{
+    padding:10px 0 10px 0;/*TRBL*/
+    background-color:#1a0d00;/*#002b80*/
+    color:white;
+    border:1px solid;
+    text-align:center;
+}
+#tblSetting td,#tbProject td{
+    padding-bottom:5px;
+    text-align:center;
+}
+#tblSetting td:first-child,#tbProject td:nth-child(2){
+    text-align:left;
+    padding-left:10px;
+}
+
+#tblUser td ,#tbCheckBox td{
+    padding-left:10px;
+}
+#tblUser tr:nth-child(even),#tbProject tr:nth-child(even),#tbUser tr:nth-child(even),#tbProjectList tr:nth-child(even) {
+    background-color:#d9d9d9;
+}
+#tblUser tr:nth-child(odd),#tbProject tr:nth-child(odd),#tbUser tr:nth-child(odd),#tbProjectList tr:nth-child(odd) {
+    background-color:#f2f2f2;
+}
+.page-title{
+    font-weight:bold;
+}

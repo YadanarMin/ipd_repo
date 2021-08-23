@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>   
+
+    <meta charset="utf-8">
+    <title>Central Command Center</title>
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Noto+spanTextDesign+zjp:400,700|open+Sans:400,700&display=swap"rel="stylesheet">
+    <link rel="icon" type="image/ico" href="https://a0.awsstatic.com/libra-css/images/site/fav/favicon.ico">
+    <link rel="shortcut icon" type="image/ico" href="https://a0.awsstatic.com/libra-css/images/site/fav/favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="https://a0.awsstatic.com/libra-css/images/site/touch-icon-iphone-114-smile.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://a0.awsstatic.com/libra-css/images/site/touch-icon-ipad-144-smile.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://a0.awsstatic.com/libra-css/images/site/touch-icon-iphone-114-smile.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://a0.awsstatic.com/libra-css/images/site/touch-icon-ipad-144-smile.png">
+    
+
+
+            <style>
+             h1{
+                position:relative;
+                top:15px ;
+                left:0;
+        ;}
+
+            h2{
+                text-align: center;
+                font-size: 30px;
+                color: floralwhite;
+                
+
+
+                padding-top: 0px;
+                padding-bottom:30px;
+                padding-right: 30px;
+                padding-left: 30px;
+
+        ;}
+        .h3-title{
+            text-align: center;
+            color:black;
+            top: 20px;
+            font-size: 25px;
+            position:relative;
+            text-transform:uppercase;
+            z-index:100   
+            
+        }
+
+        .h3-title::before{
+            content: "";
+            display: block;
+            width: 40px;
+            height: 40px;
+            background: #a5d1ff;
+            position: absolute;
+            left: 50%;
+            margin-left: -20px;
+            transform: rotate(45deg);
+            text-align: center;
+            z-index:-100
+         }
+         
+         .service-area{
+             width: 1200px;
+             background-color: #ffffff;
+         }
+         .service-content{
+             justify-content: center;
+             text-align: center;
+             margin:0 auto;
+             line-height: 30px;
+             display: flex;
+             flex-wrap:wrap ;
+             max-width: 1400px;
+            padding-top: 50px;
+            padding-bottom:30px;
+            padding-right: 30px;
+            padding-left: 15px;
+             
+         }
+         
+         .sesrvice-item{
+             
+             flex: 40%;
+             text-align: center;
+             padding: 20px 20px 0;
+             margin: 5px;
+             border-radius:10px;
+         }
+         
+
+            body{
+            font-family: ヒラギノ角ゴ Pro W3,Hiragino Kaku Gothic Pro,Osaka,メイリオ,Meiryo,ＭＳ Ｐゴシック,MS PGothic,sans-serif;
+            }
+        .inner{
+            margin: 0 auto;
+        background:#232f3e;
+        
+        }
+        
+        ul{
+    list-style: square;      
+}
+ul li{
+    margin-top:12px;       
+}
+
+ul ul{
+    list-style:none;    
+}
+ul li a{
+    color:black;
+}
+#prjTitle{
+    color:#002b80;
+    font-weight:bold;
+    padding: 3% 0 0 0;
+}
+.spanTextDesign{
+    display:none;
+    color:red;
+}
+.footer{
+
+    padding-block-end: 5px;
+}
+
+            </style>
+            <script>
+                function showText(id,userName){
+                    var message = "※"  +userName +" はこのページにアクセス権限がありません。";
+                    $("#"+id).text(message);
+                    $("#"+id).css('display', 'block');
+                }
+            </script>
+        </head>
+
+
+    
+
+
+<header>
+       
+                
+            <div class="inner">
+            <h1><a href=""><img src="JPG/index.png" alt="大林ロゴ"width="100px"></a></h1>
+            <div class="head2"></div>
+            <h2>Central Command Center</h2>
+            
+            <div style="float:right;margin:-200px 10px;">
+                        <span id="loginUser">
+                    <button type="button" class="btn" onclick="window.location='http://localhost:81/iPD/login/logout'">
+                        LOGIN
+                    </button>
+
+                    <button type="button" class="btn" id="btnForgeLogin" onclick="GetThreeLeggedAuth()">
+                    FORGE LOGOUT
+                </div>
+            
+</header>
+
+<main>
+    <selection id="service"class="service-area">
+        
+            <h3 class="h3-title">Service</h3>
+         
+    
+        <ul class="service-content">
+            <ul>
+                <p> 
+                <img src="JPG/a.png"art="データー容量"width="120px">
+                <li><a href="http://localhost:81/iPD/forge/index">データ容量表示</a></li>
+                </p>  
+        </ul>
+        <ul>
+            <p> 
+                <img src="JPG/a.png"art="データポータル"width="120px">
+                <li><a href="http://localhost:81/iPD/dataPortal/index">データポータル</a></li>
+            </p> 
+        </ul>
+        <ul>
+            <p> 
+            <img src="JPG/a.png"art="OBJファイル変換"width="120px">
+                <li><a href="http://localhost:81/iPD/OBJ/index">OBJファイル変換</a></li>
+            </p> 
+        </ul>
+        <ul>   
+            <p> 
+                <img src="JPG/a.png"art="クレーン情報検索"width="120px">
+                <li><a href="http://localhost:81/iPD/crane/search">クレーン情報検索</a></li>
+            </p>  
+
+        </ul>
+        <ul>  
+            <p> 
+                <img src="JPG/a.png"art="クレーン情報登録"width="120px">
+                <li><a href="http://localhost:81/iPD/crane/save">クレーン情報登録</a></li>
+            </p>  
+        </ul>
+        <ul>
+            <p> 
+                <img src="JPG/a.png"art="プロジェクト作成"width="120px">
+                <li><a href="http://localhost:81/iPD/forge/project">プロジェクト作成</a></li>
+            </p>     
+        </ul>
+        <ul>
+            <p>
+                <img src="JPG/a.png"art="部屋情報登録【準備中】"width="120px">
+                <li><a href="http://localhost:81/iPD/common/saveRoom">部屋情報登録<span style="color:red;">【準備中】</span></a></li>
+            </p>
+         </ul>    
+        <ul>
+            <p>
+                <img src="JPG/a.png"art="構造タイプ登録【準備中】"width="120px">
+                <li><a href="#">構造タイプ登録<span style="color:red;">【準備中】</span></a></li>
+            </p>
+        </ul>
+        <ul>   
+             <p>
+                <img src="JPG/a.png"art="ファミリブラウザ【準備中】"width="120px">
+                <li><a href="#">ファミリブラウザ<span style="color:red;">【準備中】</span></a></li>
+            </p>   
+        </ul>
+
+        <ul>    
+            <p>
+                <img src="JPG/a.png"art="データ読み込み【準備中】"width="120px">
+                <li><a href="#">データ読み込み<span style="color:red;">【準備中】</span></a></li>
+            </p>  
+        </ul>
+        <ul>   
+            <p>
+                <img src="JPG/a.png"art="モデル変更履歴"width="120px">
+                <li><a href="javascript:void(0)" onclick="showText('err1','')">モデル変更履歴</a></li> 
+            </p>
+        </ul>
+        <ul>    
+            <p>   
+            <img src="JPG/a.png"art="ユーザー情報"width="120px">
+                <li><a href="javascript:void(0)" onclick="showText('err2','');">ユーザー情報</a></li> 
+                <span id="err2" class="spanTextDesign"></span>
+            </p>
+        </ul>
+            
+        <ul>   
+            <p> 
+                <img src="JPG/a.png"art="バックアップ設定【準備中】"width="120px">
+                <li><a href="javascript:void(0)" onclick="showText('err3','')">バックアップ設定<span style="color:red;">【準備中】</span></a></li> 
+                    <span id="err3" class="spanTextDesign"></span>
+            </p> 
+        </ul>
+            
+        <ul>  
+            <p> 
+                <img src="JPG/a.png"art="権限設定"width="120px">
+                <li><a href="javascript:void(0)" onclick="showText('err4','')">権限設定</a></li> 
+                    <span id="err4" class="spanTextDesign"></span>
+            </p>       
+        </ul>
+            
+        <ul> 
+             <p>   
+                <img src="JPG/a.png"art="ユーザー作成"width="120px">
+                <li><a href="javascript:void(0)" onclick="showText('err5','');">ユーザー作成</a></li> 
+                    <span id="err5" class="spanTextDesign"></span>
+             </p> 
+        </ul>
+        <ul>   
+            <p> 
+                <img src="JPG/a.png"art="マテリアル容積表示"width="120px">
+                <li><a href="http://localhost:81/iPD/forge/volumeChart">マテリアル容積表示</a></li>
+            </p>   
+
+        </ul>
+            
+        <ul>
+            <p>
+                <img src="JPG/a.png"art="部屋情報表示"width="120px">
+                <li><a href="http://localhost:81/iPD/roomProp/index">部屋情報表示</a></li>
+            </p>   
+        </ul>
+            
+        <ul>
+            <p>
+                <img src="JPG/a.png"art="鉄筋重量表示"width="120px">
+                <li><a href="http://localhost:81/iPD/forge/tekkin">鉄筋重量表示</a></li>
+            </p>    
+        </ul>
+            
+        <ul> 
+            <p>
+                <img src="JPG/a.png"art="ガントチャートサンプル"width="120px">
+                <li><a href="http://localhost:81/iPD/gantt/sample">ガントチャートサンプル</a></li>
+            <p>   
+
+        </ul>
+           
+
+        </ul>
+    </main>
+    <div class="footer" style="padding-top:10px;background:linear-gradient( #232f3e 50%,#232f3e);width:100%;">
+        <p>Copyright &copy; All Rights Reserved.</p>
+    </div>
+</html>
+
